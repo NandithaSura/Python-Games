@@ -1,0 +1,26 @@
+print("welcome to my computer quize!!")
+
+playing = input("do you wanna play the quize game: ")
+
+if(playing.lower() == "yes"):
+    print("common lets play!!")
+else:
+    print("QUIT")
+score = 0
+
+answer = input("what does the CPU stands for: ")
+if answer == "central processing unit":
+    print("correct!!")
+    score +=1
+else:
+    print("sorry: (");
+
+answer = input("what does the gpu stands for: ")
+if answer == "graphical processing unit":
+    print("correct!!")
+    score +=1
+else:
+    print("sorry: (");
+
+print("you got " + str(score)+ " questions correct")
+print("you got " + str(score/2)*100+ "%.")
